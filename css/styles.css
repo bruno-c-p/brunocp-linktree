@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #5390E3;
+    --secondary-color: #AAC9F3;
+}
+
+body {
+    height: 100vh;
+    padding: 2.5rem 0;
+    font-family: 'Switzer', sans-serif;
+    background: linear-gradient(225deg, #0F141F 0%, #06090F 100%) no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+header {
+    gap: .75rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-info {
+    gap: .5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--secondary-color);
+}
