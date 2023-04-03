@@ -91,3 +91,11 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.other-links__icon {
+    transition: filter 200ms ease-in-out;
+}
+
+.other-links__icon:hover {
+    filter: sepia(100%) grayscale(100%);
+}
