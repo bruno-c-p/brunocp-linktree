@@ -1,17 +1,22 @@
 :root {
+    --dark-color: #06090F;
     --primary-color: #5390E3;
     --secondary-color: #AAC9F3;
+    --background-gradient: linear-gradient(225deg, #0F141F 0%, #06090F 100%);
+    --link-background: #F7F9FC;
+    --hover-background: #1B69D2;
 }
 
 body {
     height: 100vh;
     padding: 2.5rem 0;
     font-family: 'Switzer', sans-serif;
-    background: linear-gradient(225deg, #0F141F 0%, #06090F 100%) no-repeat;
+    background: var(--background-gradient) no-repeat;
 }
 
 .container {
     margin: 0 auto;
+    padding: 0 4%;
     max-width: 700px;
 }
 
@@ -31,15 +36,49 @@ header {
 }
 
 .title {
-    font-weight: 700;
     font-size: 3rem;
+    font-weight: 700;
     line-height: 4rem;
     color: var(--primary-color);
 }
 
 .subtitle {
-    font-weight: 400;
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.5rem;
     color: var(--secondary-color);
+}
+
+.links {
+    margin-top: 2rem;
+}
+
+.link-list {
+    gap: 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link a {
+    display: block;
+    font-weight: 400;
+    padding: 1rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    color: var(--dark-color);
+    background-color: var(--link-background);
+    transition: background-color 300ms ease-in-out;
+}
+
+.link a:hover {
+    color: #fff;
+    background-color: var(--hover-background);
 }
