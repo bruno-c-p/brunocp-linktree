@@ -143,3 +143,9 @@ body {
 .other-links__icon:hover {
     filter: sepia(100%) grayscale(100%);
 }
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
