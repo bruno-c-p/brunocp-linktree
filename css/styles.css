@@ -18,7 +18,7 @@ body {
     max-width: 700px;
 }
 
-header {
+.header {
     margin: 2.5rem auto;
     gap: .75rem;
     display: flex;
@@ -27,21 +27,21 @@ header {
     flex-direction: column;
 }
 
-.profile-info {
+.header__profile-info {
     gap: .5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.title {
+.header__title {
     font-size: 3rem;
     font-weight: 700;
     line-height: 4rem;
     color: var(--primary-color);
 }
 
-.subtitle {
+.header__subtitle {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
@@ -52,7 +52,7 @@ header {
     margin: 2rem auto;
 }
 
-.link-list {
+.links__list {
     gap: 2rem;
     display: flex;
     text-align: center;
@@ -60,11 +60,11 @@ header {
     text-transform: uppercase;
 }
 
-.link {
+.links__item {
     cursor: pointer;
 }
 
-.link a {
+.links__link {
     display: block;
     font-weight: 400;
     padding: 1rem 1rem;
@@ -77,7 +77,7 @@ header {
     transition: background-color 300ms ease-in-out;
 }
 
-.link a:hover {
+.links__link:hover {
     color: #fff;
     background-color: var(--hover-background);
 }
@@ -86,7 +86,7 @@ header {
     margin: 2rem auto;
 }
 
-.other-links-list {
+.other-links__list {
     gap: 1rem;
     display: flex;
     justify-content: center;
